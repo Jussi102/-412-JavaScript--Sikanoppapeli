@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    background-image:
+        linear-gradient(rgba(33, 17, 121, 0.3), rgba(97, 40, 150, 0.3)),
+        url("omg.png"),
+        url("taustakuva.jpg");
+
+    background-size: cover, cover, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+main {
+    flex: 1;
+}
+
+
+header {
+    text-align: center;
+    border-color: white;
+    padding: 2px;
+    background-color: transparent;
+
+}
+
+header h1 {
+    background-color: rgba(128, 128, 128, 0.089);
+    padding: 10px;
+    text-shadow: 0 1px 3px white;
+    color:white;
+}
+
+form {
+    background-color: rgba(66, 33, 97, 0.904);
+    border-radius: 5px;
+    margin-right: 750px;
+    margin-left: 750px;
+    padding: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3em;
+
+}
+form label {
+    text-shadow: 0 1px 1px white;
+    color:white;
+}
+form input {
+    border-radius: 7px;
+    color:white;
+    padding: 5px;
+    background-color: rgba(75, 24, 122, 0.959);
+    border-style: solid;
+    border-color:rgba(253, 251, 255, 0.445)
+}
+
+form p {
+    color:white;
+    font-size: 0.9em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+form label #pelaajienNimet {
+    color:red;
+}
+
+.pelaaja1 {
+    padding: 10px;
+    background-color: rgba(62, 27, 95, 0.959);
+    border-radius: 15px;
+    display: none;
+}
+
+.pelaaja2 {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgba(62, 27, 95, 0.959);
+    border-radius: 15px;
+    display: none;
+}
+
+.pelaaja3 {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgba(62, 27, 95, 0.959);
+    border-radius: 15px;
+    display: none;
+}
+
+
+.pelaajat {
+    background-color: rgba(51, 25, 73, 0.932);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.pelaa {
+    margin-top: 20px;
+}
+
+#pelaaNappi {
+    background-color: rgba(66, 33, 97, 0.959);
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+#pelaaNappi:hover {
+    transform: scale(1.6);
+    transition: 0.5s;
+    cursor: grab;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:transparent;
+    margin: 0;
+}
+
+footer p {
+    background-color: rgba(128, 128, 128, 0.089);
+    text-shadow: 0 1px 3px white;
+    color:white;
+}
