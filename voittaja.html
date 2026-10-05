@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voittaja</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Sikanoppapeli</h1>
+    </header>
+
+    <main>
+        <div class="voittaja">
+            <h2>Voittaja!</h2>
+            <p id="voittajanNimi"></p>
+
+            <div class="voittajaNapit">
+                <button id="alkuunNappi">Palaa alkuun</button>
+                <button id="uudestaanNappi">Pelaa uudestaan</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <footer>
+            <p>
+                #412 JavaScript: Sikanoppapeli <br>
+                &copy;Jussi Varonen 2026
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        const voittaja = localStorage.getItem("voittaja");
+
+        document.querySelector("#voittajanNimi").textContent = voittaja + " voitti pelin!";
+
+        document.querySelector("#alkuunNappi").onclick = function() {
+            window.location.href = "index.html";
+        };
+
+        document.querySelector("#uudestaanNappi").onclick = function() {
+            window.location.href = "index.html";
+        };
+    </script>
+
+</body>
+</html>

@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sikanoppapeli</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+
+    <header class="main-header">
+        <h1>Sikanoppapeli</h1>
+    </header>
+
+    <main>
+
+        <div class="napit">
+            <div class="heita">
+                <input type="button" id="heitaNappi" value="Heitä Noppaa">
+            </div>
+
+            <div class="sailytys">
+                <input type="button" id="sailytysNappi" value="Säilytä pisteet">
+            </div>
+        </div>
+
+        <div class="nopat">
+            <img src="nopat/noppa1.png" id="noppa1" alt="Noppa 1">
+            <img src="nopat/noppa1.png" id="noppa2" alt="Noppa 2">
+        </div>
+
+        <div class="vuoro">
+            <p id="vuoro"></p>
+        </div>
+
+        <form class="pisteTaulukko">
+            <div class="otsikko">
+                <p>Pisteet</p>
+            </div>
+
+            <div class="sisalto">
+                <p>
+                    <span id="nimi1"></span>:
+                    <span id="pisteet1">0</span>
+                </p>
+
+                <p>
+                    <span id="nimi2"></span>:
+                    <span id="pisteet2">0</span>
+                </p>
+
+                <p id="pelaaja3Rivi">
+                    <span id="nimi3"></span>:
+                    <span id="pisteet3">0</span>
+                </p>
+            </div>
+        </form>
+
+    </main>
+
+    <div class="footer">
+        <footer>
+            <p>#412 JavaScript: Sikanoppapeli <br>
+            &copy;Jussi Varonen 2026</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
