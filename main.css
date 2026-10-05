@@ -155,4 +155,5 @@ footer p {
     background-color: rgba(128, 128, 128, 0.089);
     text-shadow: 0 1px 3px white;
     color:white;
+    padding: 20px;
 }
